@@ -13,7 +13,7 @@ namespace CalculadoraDeDatas
             DateTime.TryParse(dtpFinal.Value.ToString(), out DateTime dtf);
 
             TimeSpan dias = dtf - dti;
-            lbResultado.Text = dias.Days.ToString();
+            lbResultado.Text = $"{dias.Days.ToString()} Dias";
         }
 
         private void btnAdicionaSubtrai_Click(object sender, EventArgs e)
